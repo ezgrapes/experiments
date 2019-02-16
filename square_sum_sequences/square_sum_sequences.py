@@ -3,7 +3,7 @@ import math
 
 class NaiveSquareSumSequence():
 
-    def __init__(self, seed, length=1):
+    def __init__(self, seed=1, length=1):
         self.sequence = [seed]
         for _ in xrange(length - 1):
             self.append_next_value()
@@ -28,7 +28,7 @@ class NaiveSquareSumSequence():
 
 class FastSquareSumSequence():
 
-    def __init__(self, seed, length=1):
+    def __init__(self, seed=1, length=1):
         self.mapping = {0: seed}
         self.last_value = seed
         for _ in xrange(length - 1):
